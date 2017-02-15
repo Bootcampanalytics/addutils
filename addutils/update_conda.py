@@ -19,7 +19,7 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-
+'''
 import sys
 from subprocess import Popen, PIPE
 import json
@@ -72,5 +72,6 @@ if __name__ == "__main__":
     install_from_pip('fake-factory')
     install_from_pip('liac-arff')
     install_from_pip('pandas-datareader')
-    print _call_conda(['install', 'seaborn'])
-    
+    print _call_conda(['install', 'seaborn']
+'''
+
