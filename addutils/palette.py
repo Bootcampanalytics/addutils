@@ -67,7 +67,6 @@ def sample(channel, pos):
         return channel[-1][1]
 
     idx_a = max(0, idx_b - 1)
-    
     if idx_a == idx_b:
         return channel[idx_a][1]
         
