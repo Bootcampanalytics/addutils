@@ -76,7 +76,10 @@ def sample(channel, pos):
     return val_a + dx * (val_b - val_a)
 
 def sample_mpl_cmap(cmap, nsamples):
-    channels = map(list, [ cmap['red'], cmap['green'], cmap['blue'] ])
+    #channels = map(list, [ cmap['red'], cmap['green'], cmap['blue'] ])
+    channels = [list(b) for b in [ cmap['red'], cmap['green'], cmap['blue'] ] ]
+
+
     for chan in channels:
         # Sort stops by position
         chan.sort(key=lambda stop: stop[0])
