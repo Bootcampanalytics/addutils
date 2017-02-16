@@ -1,5 +1,5 @@
 from distutils.core import setup
-import addutils
+#import addutils
 
 setup(name='AddUtils',
       version=addutils.__version__,
