@@ -74,7 +74,7 @@ def imagegrid(fig, images, grid_size=None, text=None,
                            y=[ y-0.02 for y in ys ],
                            text=text, text_font_size='8pt')
         
-        text_args = { k : v[5:] for k,v in text_args.items() if k.startswith("text_")}
+        text_args = { k[5:] : v for k,v in text_args.items() if k.startswith("text_")}
 
         fig.text(**text_kwargs)
 
@@ -105,7 +105,7 @@ def imagegrid_figure(*args, **kwargs):
     """
     
     figure_args = dict()
-    figure_args = { k : v[7:] for k,v in kwargs.items() if k.startswith("figure_")}
+    figure_args = { k[7:] : v for k,v in kwargs.items() if k.startswith("figure_")}
         
     fig = bk.figure(**figure_args)
     rw, rh = imagegrid(fig, *args, **kwargs)
