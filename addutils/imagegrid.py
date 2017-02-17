@@ -74,10 +74,7 @@ def imagegrid(fig, images, grid_size=None, text=None,
                            y=[ y-0.02 for y in ys ],
                            text=text, text_font_size='8pt')
         
-        for k in kwargs.keys():
-            if not k.startswith("text_"):
-                continue
-            text_kwargs[k] = kwargs.pop(k)
+        figure_args = { k : v for k,v in figure_args.items() if not k.startswith("text_")}
 
         fig.text(**text_kwargs)
 
