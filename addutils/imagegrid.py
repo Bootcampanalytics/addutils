@@ -24,7 +24,7 @@ import numpy as np
 import bokeh.plotting as bk
 from bokeh.models.ranges import Range1d
 
-import addutils.palette as pal
+#import addutils.palette as pal
 
 
 def imagegrid(fig, images, grid_size=None, text=None,
