@@ -29,4 +29,4 @@ from addutils.generic import read_txt
 #import update_conda
 import addutils.palette
 import addutils.importance
-import imagegrid
+import addutils.imagegrid
