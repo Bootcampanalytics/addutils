@@ -26,6 +26,6 @@ import addutils.generators
 from addutils.datagenerator import DataGenerator
 #from css_style import css_notebook
 from addutils.generic import read_txt
-import addutils.palette as pal
+#import addutils.palette 
 import addutils.importance
-import addutils.imagegrid as ig
+import addutils.imagegrid
