@@ -108,9 +108,7 @@ def imagegrid_figure(*args, **kwargs):
     """
     
     figure_args = dict()
-
-       
-    figure_args = { k : v for k,v in d.items() if not k.startswith("figure_")}
+    figure_args = { k : v for k,v in figure_args.items() if not k.startswith("figure_")}
         
     fig = bk.figure(**figure_args)
     rw, rh = imagegrid(fig, *args, **kwargs)
