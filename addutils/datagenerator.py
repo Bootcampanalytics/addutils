@@ -44,7 +44,7 @@
 import os
 import shutil
 
-import generators
+import addutils.generators
 
 class DataGenerator(object):
     __shared__state = {}
