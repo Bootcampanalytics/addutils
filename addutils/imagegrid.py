@@ -109,11 +109,7 @@ def imagegrid_figure(*args, **kwargs):
     
     figure_args = dict()
 
-    #for k in kwargs.keys():
-    #    if not k.startswith("figure_"):
-    #        continue
-    #    figure_args[k[7:]] = kwargs.pop(k)
-        
+       
     figure_args = { k : v for k,v in d.iteritems() if not k.startswith("figure_")}
         
     fig = bk.figure(**figure_args)
