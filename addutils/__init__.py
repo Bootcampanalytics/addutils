@@ -20,12 +20,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__version__ = '0.5.4'
-from addutils.pandas_addtut import side_by_side, side_by_side2
-from addutils.datagenerator import DataGenerator
+#__version__ = '0.5.4'
+#from addutils.pandas_addtut import side_by_side, side_by_side2
+#from addutils.datagenerator import DataGenerator
 #from css_style import css_notebook
-from addutils.generic import read_txt
+#from addutils.generic import read_txt
 #import update_conda
-import addutils.palette
-import addutils.importance
+#import addutils.palette
+#import addutils.importance
 # import imagegrid
