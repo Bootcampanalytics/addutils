@@ -6,6 +6,7 @@ setup(name='AddUtils',
       description='Addfor tutorials visualization utilities',
       author='Daniele Trainini',
       author_email='daniele.trainini@add-for.com',
-      package_data={'addutils': ['resources/*']},
+      package_dir={'addutils': 'addutils'},
+      package_data={'addutils': 'resources/*'},
       packages=['addutils'],
      )
